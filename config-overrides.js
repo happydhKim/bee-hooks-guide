@@ -1,10 +1,4 @@
-const {
-  useBabelRc,
-  removeModuleScopePlugin,
-  override,
-} = require('customize-cra')
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const { useBabelRc, removeModuleScopePlugin, override } = require('customize-cra');
 
-module.exports = override(
-  useBabelRc(),
-  removeModuleScopePlugin(),
-);
+module.exports = override(useBabelRc(), removeModuleScopePlugin());
