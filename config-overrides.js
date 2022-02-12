@@ -1,4 +1,11 @@
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const { useBabelRc, removeModuleScopePlugin, override } = require('customize-cra');
+const path = require('path');
+const { override, getBabelLoader } = require('customize-cra');
 
-module.exports = override(useBabelRc(), removeModuleScopePlugin());
+const babelConfig = (config) => {
+  const loader = getBabelLoader(config);
+  loader.options.configFile = path.resolve(__dirname, 'babel.config.js');
+
+  return config;
+};
+
+module.exports = override(babelConfig);
