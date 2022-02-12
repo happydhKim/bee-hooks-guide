@@ -1,4 +1,4 @@
-import { Header } from 'components';
+import { Footer, Header } from 'components';
 
 import type { FC } from 'react';
 
@@ -7,6 +7,7 @@ const AppLayout: FC = ({ children }) => {
     <div>
       <Header />
       <main>{children}</main>
+      <Footer />
     </div>
   );
 };
