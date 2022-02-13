@@ -1581,6 +1581,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@emotion/eslint-plugin@npm:^11.7.0":
+  version: 11.7.0
+  resolution: "@emotion/eslint-plugin@npm:11.7.0"
+  peerDependencies:
+    eslint: 6 || 7 || 8
+  checksum: 71bdeed3663e00af57631d810d615517051e8941799ef9177083e3d5db45aada21288383bcb7d150aaa29a6519b2cabe3dc9a2e61f1262290e4b5b3d5644f93a
+  languageName: node
+  linkType: hard
+
 "@emotion/hash@npm:^0.8.0":
   version: 0.8.0
   resolution: "@emotion/hash@npm:0.8.0"
@@ -2529,6 +2538,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/history@npm:^4.7.11":
+  version: 4.7.11
+  resolution: "@types/history@npm:4.7.11"
+  checksum: c92e2ba407dcab0581a9afdf98f533aa41b61a71133420a6d92b1ca9839f741ab1f9395b17454ba5b88cb86020b70b22d74a1950ccfbdfd9beeaa5459fdc3464
+  languageName: node
+  linkType: hard
+
 "@types/html-minifier-terser@npm:^6.0.0":
   version: 6.1.0
   resolution: "@types/html-minifier-terser@npm:6.1.0"
@@ -2663,6 +2679,27 @@ __metadata:
   dependencies:
     "@types/react": "*"
   checksum: 4d5730dffbef86c887cecad7e3cecda424ce6a64d0b5441c63b5b015d48219868660a2bb1aa15e897e565ad8867fa6b885d4358b04e1c4e589ba4c07c3fda55c
+  languageName: node
+  linkType: hard
+
+"@types/react-router-dom@npm:^5.3.3":
+  version: 5.3.3
+  resolution: "@types/react-router-dom@npm:5.3.3"
+  dependencies:
+    "@types/history": ^4.7.11
+    "@types/react": "*"
+    "@types/react-router": "*"
+  checksum: 28c4ea48909803c414bf5a08502acbb8ba414669b4b43bb51297c05fe5addc4df0b8fd00e0a9d1e3535ec4073ef38aaafac2c4a2b95b787167d113bc059beff3
+  languageName: node
+  linkType: hard
+
+"@types/react-router@npm:*":
+  version: 5.1.18
+  resolution: "@types/react-router@npm:5.1.18"
+  dependencies:
+    "@types/history": ^4.7.11
+    "@types/react": "*"
+  checksum: f08b37ee822f9f9ff904ffd0778fe2bb7c717ed3ee311610382ee024d02a35169bd3301ecde863cac21aae8fdee919501e8ea22bad0260c02c10cfbdba5c71be
   languageName: node
   linkType: hard
 
@@ -3758,12 +3795,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "bee-hooks-guide@workspace:."
   dependencies:
-    "@babel/plugin-proposal-nullish-coalescing-operator": ^7.16.7
-    "@babel/plugin-proposal-optional-chaining": ^7.16.7
     "@babel/preset-env": ^7.16.11
     "@babel/preset-react": ^7.16.7
     "@babel/preset-typescript": ^7.16.7
     "@emotion/babel-plugin": ^11.7.2
+    "@emotion/eslint-plugin": ^11.7.0
     "@emotion/react": ^11.7.1
     "@emotion/styled": ^11.6.0
     "@testing-library/jest-dom": ^5.16.2
@@ -3773,6 +3809,7 @@ __metadata:
     "@types/node": ^16.11.24
     "@types/react": ^17.0.39
     "@types/react-dom": ^17.0.11
+    "@types/react-router-dom": ^5.3.3
     customize-cra: ^1.0.0
     emotion-normalize: ^11.0.1
     eslint: ^8.8.0
