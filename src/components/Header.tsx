@@ -6,13 +6,28 @@ const Header: FC = () => {
   return (
     <header
       css={css`
+        height: 56px;
+        width: 100%;
         display: flex;
         justify-content: space-between;
-        padding: 8px;
+        border-bottom: 1px solid #ccc;
       `}
     >
-      <span>Bee Hooks Guide🐝</span>
-      <nav>
+      <strong
+        css={css`
+          cursor: pointer;
+          margin-left: 30px;
+          padding: 18px 0;
+          font-size: 20px;
+        `}
+      >
+        Bee Hooks Guide 🐝
+      </strong>
+      <nav
+        css={css`
+          margin-right: 30px;
+        `}
+      >
         <ul
           css={css`
             list-style-type: none;
