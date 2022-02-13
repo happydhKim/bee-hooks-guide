@@ -8,7 +8,6 @@ const Footer: FC = () => {
       css={css`
         width: 100%;
         text-align: center;
-        padding: 20px;
         border-top: 1px solid #ccc;
       `}
     >

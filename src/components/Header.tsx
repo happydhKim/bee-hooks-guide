@@ -1,4 +1,5 @@
 import { css } from '@emotion/react';
+import styled from '@emotion/styled';
 
 import type { FC } from 'react';
 
@@ -6,7 +7,7 @@ const Header: FC = () => {
   return (
     <header
       css={css`
-        height: 56px;
+        height: 50px;
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -17,7 +18,7 @@ const Header: FC = () => {
         css={css`
           cursor: pointer;
           margin-left: 30px;
-          padding: 18px 0;
+          padding: 16px 0;
           font-size: 20px;
         `}
       >
@@ -34,13 +35,18 @@ const Header: FC = () => {
             display: flex;
           `}
         >
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
+          <Link>one</Link>
+          <Link>two</Link>
+          <Link>three</Link>
         </ul>
       </nav>
     </header>
   );
 };
+
+const Link = styled('li')`
+  width: 50px;
+  cursor: pointer;
+`;
 
 export default Header;
