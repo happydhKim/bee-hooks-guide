@@ -1,7 +1,6 @@
 import normalize from 'emotion-normalize';
 import { css, Global } from '@emotion/react';
 import Routes from 'pages/Routes';
-import { AppLayout } from 'layouts';
 
 const App = () => {
   return (
@@ -16,9 +15,7 @@ const App = () => {
           }
         `}
       />
-      <AppLayout>
-        <Routes />
-      </AppLayout>
+      <Routes />
     </>
   );
 };
