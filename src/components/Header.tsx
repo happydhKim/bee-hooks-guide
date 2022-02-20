@@ -37,7 +37,7 @@ const Header: FC = () => {
           `}
         >
           <List>
-            <Link to="/main">main</Link>
+            <Link to="/">main</Link>
           </List>
           <List>
             <Link to="/fullscreen">fullscreen</Link>
