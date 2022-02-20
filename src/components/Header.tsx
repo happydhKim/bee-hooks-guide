@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 
@@ -35,18 +36,32 @@ const Header: FC = () => {
             display: flex;
           `}
         >
-          <Link>one</Link>
-          <Link>two</Link>
-          <Link>three</Link>
+          <List>
+            <Link to="/main">main</Link>
+          </List>
+          <List>
+            <Link to="/fullscreen">fullscreen</Link>
+          </List>
         </ul>
       </nav>
     </header>
   );
 };
 
-const Link = styled('li')`
+const List = styled('li')`
   width: 50px;
   cursor: pointer;
+  a:link {
+    color: red;
+    text-decoration: none;
+  }
+  a:visited {
+    color: black;
+    text-decoration: none;
+  }
+  a:hover {
+    color: blue;
+  }
 `;
 
 export default Header;
