@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import { css } from '@emotion/react';
 import { Footer, Header } from 'components';
 
@@ -26,4 +27,4 @@ const AppLayout: FC = ({ children }) => {
   );
 };
 
-export default AppLayout;
+export default memo(AppLayout);
