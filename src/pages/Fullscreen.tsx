@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import { useFullscreen } from 'bee-hooks';
 import { css } from '@emotion/react';
 import { Button } from 'components';
@@ -29,4 +30,4 @@ const Fullscreen: FC = () => {
   );
 };
 
-export default Fullscreen;
+export default memo(Fullscreen);

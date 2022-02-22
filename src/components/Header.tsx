@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import { Link } from 'react-router-dom';
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
@@ -64,4 +65,4 @@ const List = styled('li')`
   }
 `;
 
-export default Header;
+export default memo(Header);
