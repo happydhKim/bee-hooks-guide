@@ -24,7 +24,7 @@ const ContentLayout: FC<ContentLayoutProps> = ({ content }) => {
           `}
         >
           {content.map((node, index) => (
-            <section key={index}>{content}</section>
+            <section key={index}>{node}</section>
           ))}
         </div>
       )}
