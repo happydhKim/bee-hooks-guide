@@ -5,8 +5,8 @@ import { Button } from 'components';
 
 import type { FC } from 'react';
 
-const Fullscreen: FC = () => {
-  const { fullscreenRef, toggle, isFullscreen } = useFullscreen();
+const FullscreenContainer: FC = () => {
+  const { toggle, isFullscreen } = useFullscreen();
   return (
     <>
       <div
@@ -15,7 +15,6 @@ const Fullscreen: FC = () => {
         `}
       >
         <div
-          ref={fullscreenRef}
           css={css`
             font-size: 80px;
             text-align: center;
@@ -23,11 +22,11 @@ const Fullscreen: FC = () => {
         >
           🐝
         </div>
-        <span>If you don't use fullscreenRef, the entire screen will be fullscreen.</span>
+        <span>Normal Fullscreen mode.</span>
         <Button onClick={toggle}>{isFullscreen ? 'set normal mode' : 'set fullscreen mode'}</Button>
       </div>
     </>
   );
 };
 
-export default memo(Fullscreen);
+export default memo(FullscreenContainer);
