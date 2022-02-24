@@ -16,7 +16,7 @@ const AppLayout: FC = ({ children }) => {
       <Header />
       <main
         css={css`
-          min-height: 800px;
+          height: calc(100vh - 50px);
         `}
       >
         {children}
