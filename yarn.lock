@@ -3810,7 +3810,7 @@ __metadata:
     "@types/react": ^17.0.39
     "@types/react-dom": ^17.0.11
     "@types/react-router-dom": ^5.3.3
-    bee-hooks: ^0.0.4
+    bee-hooks: ^0.0.6
     customize-cra: ^1.0.0
     emotion-normalize: ^11.0.1
     eslint: ^8.8.0
@@ -3834,10 +3834,10 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"bee-hooks@npm:^0.0.4":
-  version: 0.0.4
-  resolution: "bee-hooks@npm:0.0.4"
-  checksum: 78fe59000932b404b4c30471234e71552f0356274ee2df271c142e91f91030e2a2aa78c7c0611dad3f62291b67bc4e7332620fa74bca50434ef8297ee1582c46
+"bee-hooks@npm:^0.0.6":
+  version: 0.0.6
+  resolution: "bee-hooks@npm:0.0.6"
+  checksum: daef80cace34613229a39a9598228ca3ed7b17021ed8c4f9e2aa6f431bc7fc871b6129459c77947694d6d6389c163f3b0acaa11fb5b10be52c8bd035620c9749
   languageName: node
   linkType: hard
 

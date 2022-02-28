@@ -43,6 +43,9 @@ const Header: FC = () => {
           <List>
             <Link to="/fullscreen">fullscreen</Link>
           </List>
+          <List>
+            <Link to="/pageleave">pageleave</Link>
+          </List>
         </ul>
       </nav>
     </header>
@@ -50,7 +53,7 @@ const Header: FC = () => {
 };
 
 const List = styled('li')`
-  width: 50px;
+  width: 80px;
   cursor: pointer;
   a:link {
     color: red;

@@ -5,8 +5,9 @@ import { AppLayout } from 'layouts';
 import type { FC } from 'react';
 
 const MainPage = lazy(() => import('pages/Main'));
-const FullscreenPage = lazy(() => import('pages/Fullscreen'));
-const NotFoundPage = lazy(() => import('pages/NotFound'));
+const Fullscreen = lazy(() => import('pages/Fullscreen'));
+const PageLeave = lazy(() => import('pages/PageLeave'));
+const NotFound = lazy(() => import('pages/NotFound'));
 
 const Routes: FC = () => {
   return (
@@ -15,8 +16,9 @@ const Routes: FC = () => {
         <AppLayout>
           <ReactRoutes>
             <Route path="/" element={<MainPage />} />
-            <Route path="/fullscreen" element={<FullscreenPage />} />
-            <Route path="*" element={<NotFoundPage />} />
+            <Route path="/fullscreen" element={<Fullscreen />} />
+            <Route path="/pageleave" element={<PageLeave />} />
+            <Route path="*" element={<NotFound />} />
           </ReactRoutes>
         </AppLayout>
       </Suspense>
