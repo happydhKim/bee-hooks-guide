@@ -44,6 +44,9 @@ const Header: FC = () => {
             <Link to="/fullscreen">fullscreen</Link>
           </List>
           <List>
+            <Link to="/spring">spring</Link>
+          </List>
+          <List>
             <Link to="/pageleave">pageleave</Link>
           </List>
         </ul>
