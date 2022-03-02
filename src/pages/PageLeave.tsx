@@ -16,10 +16,10 @@ const PageLeave: FC = () => {
         text-align: center;
         height: 200px;
         width: 500px;
-        border: 1px solid #ccc;
         padding: 50px;
       `}
     >
+      <p>The event is fired when the mouse cursor is moved out of the browser.</p>
       <div
         css={css`
           display: inline-block;
